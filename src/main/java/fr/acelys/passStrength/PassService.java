@@ -11,8 +11,8 @@ public class PassService {
 
     public List<String> getPass(int length, int count) {
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < count; i++){
-            String pass = RandomPassWord.newString(length);
+        for (int i = 0; i < length; i++){
+            String pass = RandomPassWord.newString(count);
             list.add(pass);
         }
         return list;
